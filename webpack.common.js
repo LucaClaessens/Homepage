@@ -5,6 +5,7 @@ const path = require('path');
 module.exports = {
   entry: [
     "./src/index.html",
+    "./src/favicon.ico",
     './src/js/index.js',
   ],
   externals: {
@@ -29,7 +30,7 @@ module.exports = {
         ],
       },
       {
-        test: /\.(html)$/,
+        test: /\.(html|ico)$/,
         use: [
           {
             loader: 'file-loader',
