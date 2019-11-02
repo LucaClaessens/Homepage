@@ -1,7 +1,11 @@
-# Homepage
+Lucaclaessens.com
+======
+Repository holding my personal webpage's code.
 
-Readme will come soon!
-I promise myself. 
+Commands
+-----
+A few simple scripts are available:
 
-Don't forget to list the commands here!
-😤
+* `start` - Starts a local devserver on port 3000, with liveReloading enabled.
+* `build` - Builds the source files into a dist folder.
+* `deploy` - Builds the code, then deploys to firebase.
