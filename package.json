@@ -33,7 +33,7 @@
     "@babel/preset-env": "^7.2.0",
     "babel-loader": "^8.0.4",
     "babel-preset-airbnb": "^3.0.1",
-    "browser-sync": "^2.26.3",
+    "browser-sync": "^2.26.7",
     "css-loader": "^2.0.0",
     "eslint": "^5.9.0",
     "eslint-config-airbnb-base": "^13.1.0",
@@ -46,7 +46,7 @@
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
     "webpack-cli": "^3.1.2",
-    "webpack-dev-server": "^3.1.10"
+    "webpack-dev-server": "^3.9.0"
   },
   "browserslist": [
     "> 1%",
