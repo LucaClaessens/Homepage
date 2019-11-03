@@ -1,10 +1,28 @@
+<script>
+  import { onMount } from "svelte";
+
+  onMount(() => {
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", user => {
+        if (!user) {
+          window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/";
+          });
+        }
+      });
+    }
+  });
+</script>
+
 <svelte:head>
   <title>Luca Claessens</title>
   <meta
     name="Description"
     content="Developer and digital designer, based in Eindhoven." />
-</svelte:head>
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js">
 
+  </script>
+</svelte:head>
 <section id="about">
   <p>
     Hello, I am Luca &ndash; a Dutch born developer & digital designer who is
