@@ -61,25 +61,25 @@ html {
 |--------------------------------------------------------------------------
 */
 h1 {
-  font-size: responsive $ms-scale-2 $ms-scale-1;
+  font-size:c$ms-scale-2;
   margin: vr(0.5);
 
   @include bp-small {
-    font-size: responsive $ms-scale-6 $ms-scale-5;
+    font-size: $ms-scale-6;
   }
 
   @include bp-medium {
-    font-size: responsive $ms-scale-5 $ms-scale-4;
+    font-size: $ms-scale-5;
     margin: vr(1);
   }
 
   @include bp-large {
-    font-size: responsive $ms-scale-4 $ms-scale-3;
+    font-size: $ms-scale-4;
     
   }
 
   @include bp-xlarge {
-    font-size: responsive $ms-scale-3 $ms-scale-2;
+    font-size: $ms-scale-3;
     margin: vr(1.5);
   }
 
@@ -94,22 +94,22 @@ h1 {
 |--------------------------------------------------------------------------
 */
 h2 {
-  font-size: responsive $ms-scale-10 $ms-scale-7;
+  font-size: $ms-scale-10;
 
   @include bp-small {
-    font-size: responsive $ms-scale-7 $ms-scale-6;
+    font-size: $ms-scale-7;
   }
 
   @include bp-medium {
-    font-size: responsive $ms-scale-6 $ms-scale-5;
+    font-size: $ms-scale-6;
   }
 
   @include bp-large {
-    font-size: responsive $ms-scale-5 $ms-scale-4;
+    font-size: $ms-scale-5;
   }
 
   @include bp-xlarge {
-    font-size: responsive $ms-scale-4 $ms-scale-3;
+    font-size: $ms-scale-4;
   }
 
   @include bp-full {
@@ -123,22 +123,22 @@ h2 {
 |--------------------------------------------------------------------------
 */
 h3 {
-  font-size: responsive $ms-scale-11 $ms-scale-8;
+  font-size: $ms-scale-11;
 
   @include bp-small {
-    font-size: responsive $ms-scale-8 $ms-scale-7;
+    font-size: $ms-scale-8;
   }
 
   @include bp-medium {
-    font-size: responsive $ms-scale-7 $ms-scale-6;
+    font-size: $ms-scale-7;
   }
 
   @include bp-large {
-    font-size: responsive $ms-scale-6 $ms-scale-5;
+    font-size: $ms-scale-6;
   }
 
   @include bp-xlarge {
-    font-size: responsive $ms-scale-5 $ms-scale-4;
+    font-size: $ms-scale-5;
   }
 
   @include bp-full {
@@ -152,22 +152,22 @@ h3 {
 |--------------------------------------------------------------------------
 */
 h4 {
-  font-size: responsive $ms-scale-12 $ms-scale-9;
+  font-size: $ms-scale-12;
 
   @include bp-small {
-    font-size: responsive $ms-scale-9 $ms-scale-8;
+    font-size: $ms-scale-9;
   }
 
   @include bp-medium {
-    font-size: responsive $ms-scale-8 $ms-scale-7;
+    font-size: $ms-scale-8;
   }
 
   @include bp-large {
-    font-size: responsive $ms-scale-7 $ms-scale-6;
+    font-size: $ms-scale-7;
   }
 
   @include bp-xlarge {
-    font-size: responsive $ms-scale-6 $ms-scale-5;
+    font-size: $ms-scale-6;
   }
 
   @include bp-full {
@@ -181,22 +181,22 @@ h4 {
 |--------------------------------------------------------------------------
 */
 h5 {
-  font-size: responsive $ms-scale-12 $ms-scale-10;
+  font-size: $ms-scale-12;
 
   @include bp-small {
-    font-size: responsive $ms-scale-10 $ms-scale-9;
+    font-size: $ms-scale-10;
   }
 
   @include bp-medium {
-    font-size: responsive $ms-scale-9 $ms-scale-8;
+    font-size: $ms-scale-9;
   }
 
   @include bp-large {
-    font-size: responsive $ms-scale-8 $ms-scale-7;
+    font-size: $ms-scale-8;
   }
 
   @include bp-xlarge {
-    font-size: responsive $ms-scale-7 $ms-scale-6;
+    font-size: $ms-scale-7;
   }
 
   @include bp-full {
@@ -210,22 +210,22 @@ h5 {
 |--------------------------------------------------------------------------
 */
 h6 {
-  font-size: responsive $ms-scale-12 $ms-scale-11;
+  font-size: $ms-scale-12;
 
   @include bp-small {
-    font-size: responsive $ms-scale-11 $ms-scale-10;
+    font-size: $ms-scale-11;
   }
 
   @include bp-medium {
-    font-size: responsive $ms-scale-10 $ms-scale-9;
+    font-size: $ms-scale-10;
   }
 
   @include bp-large {
-    font-size: responsive $ms-scale-9 $ms-scale-8;
+    font-size: $ms-scale-9;
   }
 
   @include bp-xlarge {
-    font-size: responsive $ms-scale-8 $ms-scale-7;
+    font-size: $ms-scale-8;
   }
 
   @include bp-full {
@@ -241,19 +241,19 @@ h6 {
 a,
 li,
 p {
-  font-size: responsive $ms-scale-11 $ms-scale-10;
+  font-size: $ms-scale-10;
 
 
   @include bp-small {
-    font-size: responsive $ms-scale-10 $ms-scale-9;
+    font-size: $ms-scale-10;
   }
 
   @include bp-medium {
-    font-size: responsive $ms-scale-10 $ms-scale-9;
+    font-size: $ms-scale-9;
   }
 
   @include bp-large {
-    font-size: responsive $ms-scale-10 $ms-scale-9;
+    font-size: $ms-scale-9;
   }
 }
 
