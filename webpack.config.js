@@ -4,6 +4,7 @@ const config = require('sapper/config/webpack.js');
 const pkg = require('./package.json');
 const autoPreprocess = require('svelte-preprocess');
 
+
 const mode = process.env.NODE_ENV;
 const dev = mode === 'development';
 
@@ -12,12 +13,6 @@ const extensions = ['.mjs', '.js', '.json', '.svelte', '.html'];
 const mainFields = ['svelte', 'module', 'browser', 'main'];
 
 const preprocessOptions = {
-	scss: {
-		includePaths: [
-			'node_modules',
-			'src'
-		]
-	},
 	postcss: {
 		plugins: [
 			require('autoprefixer'),
@@ -40,8 +35,7 @@ module.exports = {
 							dev,
 							hydratable: true,
 							hotReload: false,
-							emitCss: true,
-							preprocess: autoPreprocess(preprocessOptions)
+							emitCss: false,
 						}
 					}
 				}

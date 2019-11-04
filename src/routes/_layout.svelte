@@ -5,9 +5,7 @@
   export let segment;
 </script>
 
-<style global lang="scss">
-  @import "./../style/main.scss";
-
+<style global>
   body {
     background-color: #fafafa;
     z-index: 1;
@@ -17,11 +15,9 @@
     max-width: 1024px;
     margin: auto;
   }
-
   section#about {
     margin-top: 2rem;
   }
-
   @media (prefers-color-scheme: dark) {
     h1,
     h2,
@@ -32,19 +28,19 @@
       color: #f2f2f2 !important;
     }
     body {
-      background-color: rgb(31, 31, 31) !important;
+      background-color: #1f1f1f !important;
     }
     .smiley-circle {
-      background-color: rgb(24, 24, 24) !important;
+      background-color: #181818 !important;
     }
     button {
-      background-color: rgb(31, 31, 31) !important;
-      a {
-        color: #f2f2f2 !important;
-      }
-      svg {
-        fill: #f2f2f2 !important;
-      }
+      background-color: #1f1f1f !important;
+    }
+    button a {
+      color: #f2f2f2 !important;
+    }
+    button svg {
+      fill: #f2f2f2 !important;
     }
   }
 </style>

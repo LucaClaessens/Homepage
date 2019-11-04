@@ -33,8 +33,7 @@
     "sass": "^1.23.3",
     "svelte": "^3.0.0",
     "svelte-loader": "^2.9.0",
-    "svelte-preprocess": "^3.2.2",
-    "webpack": "^4.7.0"
+    "webpack": "^4.28.4"
   },
   "browserslist": [
     "> 1%",

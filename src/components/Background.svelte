@@ -1,4 +1,4 @@
-<style type="text/scss">
+<style>
   #smiley {
     z-index: -1;
     display: flex;
@@ -9,13 +9,13 @@
     left: 0;
     right: 0;
     bottom: 0;
-    .smiley-circle {
-      width: 250px;
-      height: 250px;
-      border-radius: 250px;
-      background-color: rgba(255, 255, 0, 0.5);
-      filter: blur(60px);
-    }
+  }
+  #smiley .smiley-circle {
+    width: 250px;
+    height: 250px;
+    border-radius: 250px;
+    background-color: rgba(255, 255, 0, 0.5);
+    filter: blur(60px);
   }
 </style>
 

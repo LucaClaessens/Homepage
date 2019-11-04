@@ -2,11 +2,9 @@
   export let segment;
 </script>
 
-<style type="text/scss">
-  @import "./../style/variables";
-  @import "./../style/library/breakpoint";
-  header {
-    @include bp-medium {
+<style>
+  @media (min-width: 767px) {
+    header {
       display: flex;
       justify-content: space-between;
       align-items: flex-end;
@@ -24,7 +22,6 @@
     margin-bottom: 0;
     font-size: 2rem;
   }
-
   button#nav_contact-button {
     background-color: white;
     color: blue;
@@ -36,43 +33,41 @@
     display: none;
     will-change: border;
     transition: border 0.3s cubic-bezier(0.39, 0.575, 0.565, 1);
-    @include bp-medium {
+  }
+  @media (min-width: 767px) {
+    button#nav_contact-button {
       display: block;
     }
-
-    &:hover {
-      a {
-        color: rgb(75, 75, 253);
-        transition-delay: 0s;
-      }
-      svg {
-        fill: rgb(75, 75, 253);
-        transition-delay: 0s;
-      }
-    }
-
-    &:active {
-      border: 2px solid rgb(75, 75, 253);
-      transition-delay: 0s;
-    }
-    a {
-      color: blue;
-      text-decoration: none;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      will-change: color;
-      transition: color 0.3s cubic-bezier(0.39, 0.575, 0.565, 1);
-    }
-    svg {
-      fill: blue;
-      margin-right: 1rem;
-      will-change: fill;
-      transition: fill 0.3s cubic-bezier(0.39, 0.575, 0.565, 1);
-    }
-    span {
-      transform: translateY(1px);
-    }
+  }
+  button#nav_contact-button:hover a {
+    color: #4b4bfd;
+    transition-delay: 0s;
+  }
+  button#nav_contact-button:hover svg {
+    fill: #4b4bfd;
+    transition-delay: 0s;
+  }
+  button#nav_contact-button:active {
+    border: 2px solid #4b4bfd;
+    transition-delay: 0s;
+  }
+  button#nav_contact-button a {
+    color: blue;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    will-change: color;
+    transition: color 0.3s cubic-bezier(0.39, 0.575, 0.565, 1);
+  }
+  button#nav_contact-button svg {
+    fill: blue;
+    margin-right: 1rem;
+    will-change: fill;
+    transition: fill 0.3s cubic-bezier(0.39, 0.575, 0.565, 1);
+  }
+  button#nav_contact-button span {
+    transform: translateY(1px);
   }
 </style>
 
