@@ -14,3 +14,6 @@ collections:
       - { name: tumbnail, label: Featured Image, widget: image }
       - { name: title, label: Title }
       - { name: body, label: Body, widget: markdown }
+publish_mode: editorial_workflow
+media_folder: static/uploads
+public_folder: /uploads
