@@ -2,6 +2,9 @@ backend:
   branch: master
   name: git-gateway
   repo: LucaClaessens/Homepage
+publish_mode: editorial_workflow
+media_folder: static/uploads
+public_folder: /uploads
 collections:
   - name: "project" # Used in routes, e.g., /admin/collections/blog
     label: "Projects" # Used in the UI
