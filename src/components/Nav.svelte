@@ -94,6 +94,7 @@
       <span>Contact me</span>
     </a>
   </button>
+  <a href="/projects">Projects</a>
 </header>
 
 <hr class="top-line" />
