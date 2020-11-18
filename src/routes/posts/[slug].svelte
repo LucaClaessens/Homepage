@@ -2,7 +2,7 @@
   export async function preload({ params, query }) {
     // the `slug` parameter is available because
     // this file is called [slug].svelte
-    const res = await this.fetch(`_projects/${params.slug}.md`);
+    const res = await this.fetch(`_posts/${params.slug}.md`);
 
     if (res.status === 200) {
       return { postMd: await res.text() };
@@ -15,6 +15,9 @@
 <script>
   import fm from "front-matter";
   import MarkdownIt from "markdown-it";
+  import MarkdownRenderer from "./../../components/MarkdownRenderer.svelte";
+  import FeaturedImage from "./components/FeaturedImage.svelte";
+  import PostMeta from "./components/PostMeta.svelte";
 
   export let postMd;
 
@@ -23,16 +26,18 @@
   $: frontMatter = fm(postMd);
   $: post = {
     ...frontMatter.attributes,
-    html: md.render(frontMatter.body)
+    html: md.render(frontMatter.body),
   };
 </script>
 
 <svelte:head>
   <title>{post.title}</title>
+  <meta name="Description" content="{post.title} | {post.description}" />
 </svelte:head>
 
-<h1>{post.title}</h1>
+<PostMeta {post} />
+<FeaturedImage image={post.featuredImage} />
 
-<div class="content">
+<MarkdownRenderer>
   {@html post.html}
-</div>
+</MarkdownRenderer>

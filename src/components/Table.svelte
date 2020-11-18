@@ -1,5 +1,6 @@
 <script>
     import { onMount } from "svelte";
+    import { format } from "./../services/formatDate.service";
     import { media } from "./../stores/media.store";
     import Chip from "./Chip.svelte";
 
@@ -7,45 +8,13 @@
     let formatDate = () => void 0;
 
     onMount(() => {
-        formatDate = (dateString) => {
-            const rtf = new Intl.RelativeTimeFormat("en", {
+        formatDate = format(
+            new Intl.RelativeTimeFormat("en", {
                 localeMatcher: "best fit",
                 numeric: "auto",
                 style: "long",
-            });
-
-            var DURATION_IN_SECONDS = {
-                epochs: ["year", "month", "day", "hour", "minute"],
-                year: 31536000,
-                month: 2592000,
-                day: 86400,
-                hour: 3600,
-                minute: 60,
-            };
-
-            function getDuration(seconds) {
-                var epoch, interval;
-
-                for (var i = 0; i < DURATION_IN_SECONDS.epochs.length; i++) {
-                    epoch = DURATION_IN_SECONDS.epochs[i];
-                    interval = Math.floor(seconds / DURATION_IN_SECONDS[epoch]);
-                    if (interval >= 1) {
-                        return {
-                            interval: interval,
-                            epoch: epoch,
-                        };
-                    }
-                }
-            }
-
-            function timeSince(date) {
-                var seconds = Math.floor((new Date() - new Date(date)) / 1000);
-                var duration = getDuration(seconds);
-                return rtf.format(duration.interval * -1, duration.epoch);
-            }
-
-            return timeSince(dateString);
-        };
+            })
+        );
     });
 </script>
 
@@ -64,11 +33,6 @@
         }
     }
     th {
-        text-transform: uppercase;
-        font-size: 0.8125rem;
-        line-height: 0.969375rem;
-        font-weight: 400;
-        color: $text-highlight;
         padding: 0.5rem;
     }
     td {
@@ -76,6 +40,7 @@
     }
     td.title {
         font-size: 1.125rem;
+        line-height: 1.3125rem;
     }
     td.when {
         font-size: 1rem;
@@ -88,21 +53,21 @@
 <table>
     <thead>
         <tr>
-            <th align="left">Title</th>
+            <th class="mini-title" align="left">Title</th>
             {#if $media.medium}
-                <th align="left">Description</th>
+                <th class="mini-title" align="left">Description</th>
             {/if}
-            <th align="right">When</th>
-            <th align="right">What</th>
+            <th class="mini-title" align="right">When</th>
+            <th class="mini-title" align="right">What</th>
         </tr>
     </thead>
     <tbody>
         {#each entries as entry}
             <tr
-                class="entry-row"
+                class="entry-row hoverable"
                 tabindex="0"
-                on:keydown={(event) => (event.key === 'Enter' ? (window.location = `projects/${entry.slug}`) : void 0)}
-                on:click={() => (window.location = `projects/${entry.slug}`)}>
+                on:keydown={(event) => (event.key === 'Enter' ? (window.location = `posts/${entry.slug}`) : void 0)}
+                on:click={() => (window.location = `posts/${entry.slug}`)}>
                 <td class="title">{entry.title}</td>
                 {#if $media.medium}
                     <td>{entry.description}</td>

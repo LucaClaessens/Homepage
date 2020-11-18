@@ -1,6 +1,6 @@
 <script context="module">
   export function preload({ params, query }) {
-    return this.fetch(`projects.json`)
+    return this.fetch(`posts.json`)
       .then((r) => r.json())
       .then((entries) => {
         return { entries };
@@ -33,6 +33,6 @@
   <Latest entry={latestEntry} />
 </Section>
 
-<Section tagline="All ramblings" id="all-ramblings">
+<Section tagline="↘︎ All ramblings" id="all-ramblings">
   <Table {entries} />
 </Section>
