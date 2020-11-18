@@ -27,7 +27,8 @@
     "markdown-it": "^10.0.0",
     "mz": "^2.7.0",
     "polka": "next",
-    "sirv": "^0.4.0"
+    "sirv": "^0.4.0",
+    "svelte-media": "0.0.3"
   },
   "devDependencies": {
     "autoprefixer": "^9.7.1",

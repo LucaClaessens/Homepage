@@ -17,6 +17,9 @@ const preprocessOptions = {
 		plugins: [
 			require('autoprefixer'),
 		]
+	},
+	scss: {
+		data: `@import '${path.join(process.cwd(), 'src/style/_variables.scss')}';`
 	}
 }
 
@@ -36,6 +39,7 @@ module.exports = {
 							hydratable: true,
 							hotReload: false,
 							emitCss: false,
+							preprocess: autoPreprocess(preprocessOptions)
 						}
 					}
 				}
