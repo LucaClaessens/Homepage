@@ -1,22 +1,22 @@
 @media (prefers-color-scheme: dark) {
-    html,
-    body,
-    #sapper {
-        background-color: #001627 !important;
-        color: white;
-    }
+    // html,
+    // body,
+    // #sapper {
+    //     background-color: #001627 !important;
+    //     color: white;
+    // }
 
-    img {
-        opacity: 0.75;
-        transition: opacity 0.5s ease-in-out;
-    }
-    img:hover {
-        opacity: 1;
-    }
-    .highlight {
-        color: rgba(255, 255, 255, 0.75);
-    }
-    .is-title {
-        color: white;
-    }
+    // img {
+    //     opacity: 0.75;
+    //     transition: opacity 0.5s ease-in-out;
+    // }
+    // img:hover {
+    //     opacity: 1;
+    // }
+    // .highlight {
+    //     color: rgba(255, 255, 255, 0.75);
+    // }
+    // .is-title {
+    //     color: white;
+    // }
 }

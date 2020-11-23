@@ -5,7 +5,7 @@
     import markdownItFootnote from "markdown-it-footnote";
     import implicitFigures from "markdown-it-implicit-figures";
     import { onMount } from "svelte";
-    import markdownItExternalLinks from "./../services/markdown/markdown-it-external-links";
+    import markdownItExternalLinks from "../../services/markdown/markdown-it-external-links";
 
     export let markdown;
     let parsedMarkdown;

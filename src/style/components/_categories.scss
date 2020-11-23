@@ -1,4 +1,5 @@
 $ov-offset: 8px;
+$ov-offset-sm: 4px;
 
 a.category-link {
     position: relative;
@@ -30,7 +31,10 @@ a.category-link {
 span.is-category {
     position: relative;
     cursor: pointer;
-    .cat-name {
+    &.is-activated {
+        .cat-background path {
+            stroke: $secondary;
+        }
     }
     .cat-background {
         svg {
@@ -40,11 +44,27 @@ span.is-category {
         }
         pointer-events: none;
         position: absolute;
-        top: -$ov-offset;
-        left: -$ov-offset;
-        right: -$ov-offset;
-        bottom: -$ov-offset;
-        width: calc(100% + #{2 * $ov-offset});
-        height: calc(100% + #{2 * $ov-offset});
+    }
+    &.cat-size {
+        &__default {
+            .cat-background {
+                top: -$ov-offset;
+                left: -$ov-offset;
+                right: -$ov-offset;
+                bottom: -$ov-offset;
+                width: calc(100% + #{2 * $ov-offset});
+                height: calc(100% + #{2 * $ov-offset});
+            }
+        }
+        &__small {
+            .cat-background {
+                top: -$ov-offset-sm;
+                left: -$ov-offset-sm;
+                right: -$ov-offset-sm;
+                bottom: -$ov-offset-sm;
+                width: calc(100% + #{2 * $ov-offset-sm});
+                height: calc(100% + #{2 * $ov-offset-sm});
+            }
+        }
     }
 }

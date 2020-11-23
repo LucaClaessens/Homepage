@@ -2,16 +2,20 @@
   "bundler": "webpack",
   "shimport": null,
   "assets": {
-    "index": "6e926a5bf18efaf036ef/index.index.js",
-    "main": "6e926a5bf18efaf036ef/main.js",
-    "posts_$slug": "6e926a5bf18efaf036ef/posts_$slug.posts_$slug.js",
-    "posts_components_FeaturedImage": "6e926a5bf18efaf036ef/posts_components_FeaturedImage.posts_components_FeaturedImage.js",
-    "posts_components_PostMeta": "6e926a5bf18efaf036ef/posts_components_PostMeta.posts_components_PostMeta.js",
-    "vendors~posts_$slug": "6e926a5bf18efaf036ef/vendors~posts_$slug.vendors~posts_$slug.js"
+    "index": "5b8bc5c8b4707bd76e3c/index.index.js",
+    "main": "5b8bc5c8b4707bd76e3c/main.js",
+    "posts_$slug": "5b8bc5c8b4707bd76e3c/posts_$slug.posts_$slug.js",
+    "posts_components_FeaturedImage": "5b8bc5c8b4707bd76e3c/posts_components_FeaturedImage.posts_components_FeaturedImage.js",
+    "posts_components_PostMeta": "5b8bc5c8b4707bd76e3c/posts_components_PostMeta.posts_components_PostMeta.js",
+    "selected$45works": "5b8bc5c8b4707bd76e3c/selected$45works.selected$45works.js",
+    "selected$45works_components_SelectedWorksOverlay": "5b8bc5c8b4707bd76e3c/selected$45works_components_SelectedWorksOverlay.selected$45works_components_SelectedWorksOverlay.js",
+    "vendors~posts_$slug": "5b8bc5c8b4707bd76e3c/vendors~posts_$slug.vendors~posts_$slug.js"
   },
   "css": {
     "chunks": {
       "index.svelte": [],
+      "selected-works/index.svelte": [],
+      "selected-works/components/SelectedWorksOverlay.svelte": [],
       "posts/components/FeaturedImage.svelte": [],
       "posts/components/PostMeta.svelte": [],
       "posts/[slug].svelte": []

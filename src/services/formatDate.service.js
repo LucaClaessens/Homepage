@@ -22,6 +22,10 @@ function getDuration(seconds) {
     }
 }
 
+export function extractYear(dateString) {
+    return new Date(dateString).getFullYear();
+}
+
 export function format(rtf) {
     return function (dateString) {
         var seconds = Math.floor((new Date() - new Date(dateString)) / 1000);

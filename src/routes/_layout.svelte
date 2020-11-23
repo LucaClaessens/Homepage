@@ -1,6 +1,6 @@
 <script>
   import GiveWork from "../components/GiveWork.svelte";
-  import Nav from "../components/Nav.svelte";
+  import Nav from "../components/layout/Nav.svelte";
 
   export let segment;
 </script>

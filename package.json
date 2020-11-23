@@ -32,7 +32,6 @@
     "mz": "^2.7.0",
     "polka": "next",
     "sirv": "^0.4.0",
-    "svelte-inline-svg": "^1.0.1",
     "svelte-media": "0.0.3"
   },
   "devDependencies": {

@@ -14,7 +14,7 @@
 
 <script>
   import fm from "front-matter";
-  import MarkdownRenderer from "./../../components/MarkdownRenderer.svelte";
+  import MarkdownRenderer from "../../components/article/MarkdownRenderer.svelte";
   import FeaturedImage from "./components/FeaturedImage.svelte";
   import PostMeta from "./components/PostMeta.svelte";
 

@@ -1,0 +1,32 @@
+$bordercolor: #cbcbcb;
+.table-index {
+    margin-top: 1rem;
+}
+table {
+    border-collapse: collapse;
+    width: calc(100% + 1rem);
+    transform: translateX(-0.5rem);
+    max-width: 800px;
+}
+tr {
+    &:focus,
+    &:active {
+        color: $primary;
+    }
+    &.entry-row {
+        cursor: pointer;
+    }
+}
+th {
+    padding: 0.5rem;
+}
+td {
+    padding: 0.75rem 0.5rem;
+}
+td.when {
+    font-size: 1.125rem;
+    line-height: 115.1%;
+    &::first-letter {
+        text-transform: uppercase;
+    }
+}

@@ -1,5 +1,7 @@
 <script>
     export let category, icon;
+    export let size = "default";
+    export let activated = false;
 
     async function svgPromise() {
         if (icon) {
@@ -11,7 +13,7 @@
     }
 </script>
 
-<span class="is-category cat__selected-works">
+<span class="is-category cat-size__{size} {activated ? 'is-activated' : ''}">
     <span class="cat-name">{category}</span>
     {#await svgPromise() then svg}
         <span class="cat-background">
