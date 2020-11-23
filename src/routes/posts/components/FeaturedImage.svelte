@@ -4,8 +4,8 @@
 
 <style lang="scss">
     .featured-image {
-        width: 100vw;
-        height: calc(100vw * 2 / 3);
+        width: calc(100% + 3rem);
+        height: 75vh;
         background-color: #cecece;
         transform: translateX(-1.5rem);
     }

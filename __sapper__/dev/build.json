@@ -2,12 +2,12 @@
   "bundler": "webpack",
   "shimport": null,
   "assets": {
-    "index": "4304b31842e78c741d5c/index.index.js",
-    "main": "4304b31842e78c741d5c/main.js",
-    "posts_$slug": "4304b31842e78c741d5c/posts_$slug.posts_$slug.js",
-    "posts_components_FeaturedImage": "4304b31842e78c741d5c/posts_components_FeaturedImage.posts_components_FeaturedImage.js",
-    "posts_components_PostMeta": "4304b31842e78c741d5c/posts_components_PostMeta.posts_components_PostMeta.js",
-    "vendors~posts_$slug": "4304b31842e78c741d5c/vendors~posts_$slug.vendors~posts_$slug.js"
+    "index": "6e926a5bf18efaf036ef/index.index.js",
+    "main": "6e926a5bf18efaf036ef/main.js",
+    "posts_$slug": "6e926a5bf18efaf036ef/posts_$slug.posts_$slug.js",
+    "posts_components_FeaturedImage": "6e926a5bf18efaf036ef/posts_components_FeaturedImage.posts_components_FeaturedImage.js",
+    "posts_components_PostMeta": "6e926a5bf18efaf036ef/posts_components_PostMeta.posts_components_PostMeta.js",
+    "vendors~posts_$slug": "6e926a5bf18efaf036ef/vendors~posts_$slug.vendors~posts_$slug.js"
   },
   "css": {
     "chunks": {

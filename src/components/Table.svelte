@@ -2,10 +2,16 @@
     import { onMount } from "svelte";
     import { format } from "./../services/formatDate.service";
     import { media } from "./../stores/media.store";
-    import Chip from "./Chip.svelte";
 
     export let entries;
     let formatDate = () => void 0;
+
+    function limit(text, length = 50) {
+        if (text.length >= length) {
+            return text.slice(0, length) + "...";
+        }
+        return text;
+    }
 
     onMount(() => {
         formatDate = format(
@@ -70,13 +76,10 @@
                 on:click={() => (window.location = `posts/${entry.slug}`)}>
                 <td class="title">{entry.title}</td>
                 {#if $media.medium}
-                    <td>{entry.description}</td>
+                    <td>{limit(entry.description, 50)}</td>
                 {/if}
                 <td align="right" class="when highlight">
                     {formatDate(entry.date)}
-                </td>
-                <td align="right">
-                    <Chip type={entry.type} />
                 </td>
             </tr>
         {/each}

@@ -1,18 +1,22 @@
-<style lang="scss">
-    .shortdesc {
-        margin: 0.75rem 0;
-        max-width: 295px;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 1rem;
-        line-height: 1.1875rem;
-        @include bp-small {
-            max-width: 350px;
-        }
-    }
-</style>
+<script>
+    import CategorySelector from "./CategorySelector.svelte";
+</script>
 
-<p class="shortdesc highlight">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In arcu, suscipit
-    vulputate accumsan sit duis mi. Nulla et, aliquam ut ipsum turpis dui.
+<p class="landing-text">
+    Hi, this is where I share
+    <a href="/selected-works" class="category-link">
+        <CategorySelector
+            category="selected works"
+            icon="icons/selected-works.svg" />
+    </a>
+    and keep track of<br />
+    my
+    <a href="/experiments" class="category-link">
+        <CategorySelector category="experiments" icon="icons/experiments.svg" />
+    </a>
+    Sometimes, I also<br />
+    like to share some
+    <a href="/knowledge" class="category-link category-link__disabled">
+        <CategorySelector category="knowledge" icon="icons/knowledge.svg" />
+    </a>
 </p>

@@ -18,6 +18,7 @@
         }
     }
     .description {
+        max-width: 550px;
         font-size: 1.125rem;
         line-height: 1.3125rem;
     }

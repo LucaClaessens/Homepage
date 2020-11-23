@@ -1,0 +1,25 @@
+.content {
+    padding: 2rem 0;
+
+    p {
+        font-size: 1.25rem;
+        line-height: 1.625rem;
+    }
+
+    a {
+        text-decoration: none;
+        &:hover {
+            opacity: 0.75;
+        }
+        &.external-link:after {
+            content: "↗";
+            font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial;
+            font-size: 0.8rem;
+            padding-left: 4px;
+        }
+    }
+
+    img {
+        padding: 2rem 0;
+    }
+}

@@ -1,12 +1,25 @@
 @import "variables";
 
 // Import libraries
-@import "library/layout";
 @import "library/breakpoint";
 @import "library/typography";
 @import "library/modifiers";
+@import "library/darkmode";
+@import "library/animations";
+@import "library/markdown";
+@import "library/syntax-highlighting";
 // import base files
 @import "base/normalize";
+
+// import components
+@import "components/links";
+@import "components/header";
+@import "components/buttons";
+@import "components/categories";
+@import "components/footer";
+
+// import page specific shit
+@import "page/root";
 
 * {
     box-sizing: border-box;
@@ -14,14 +27,13 @@
 html,
 body,
 #sapper {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     background-color: $bg;
     width: 100%;
     height: 100%;
     overflow-y: auto;
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande",
-        sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-style: normal;
     font-weight: normal;
     hyphens: auto;
@@ -29,5 +41,12 @@ body,
 }
 
 #sapper {
-    padding: 1.5rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    main {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
 }

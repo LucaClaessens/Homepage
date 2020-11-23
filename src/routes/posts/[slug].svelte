@@ -14,30 +14,34 @@
 
 <script>
   import fm from "front-matter";
-  import MarkdownIt from "markdown-it";
   import MarkdownRenderer from "./../../components/MarkdownRenderer.svelte";
   import FeaturedImage from "./components/FeaturedImage.svelte";
   import PostMeta from "./components/PostMeta.svelte";
 
   export let postMd;
 
-  const md = new MarkdownIt();
-
   $: frontMatter = fm(postMd);
   $: post = {
     ...frontMatter.attributes,
-    html: md.render(frontMatter.body),
+    markdown: frontMatter.body,
   };
 </script>
+
+<style lang="scss">
+  .post {
+    margin: 0 auto;
+    max-width: 800px;
+  }
+</style>
 
 <svelte:head>
   <title>{post.title}</title>
   <meta name="Description" content="{post.title} | {post.description}" />
 </svelte:head>
 
-<PostMeta {post} />
-<FeaturedImage image={post.featuredImage} />
+<div class="post">
+  <PostMeta {post} />
+  <FeaturedImage image={post.featuredImage} />
 
-<MarkdownRenderer>
-  {@html post.html}
-</MarkdownRenderer>
+  <MarkdownRenderer markdown={post.markdown} />
+</div>
