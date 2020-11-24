@@ -22,6 +22,21 @@ h6 {
     font-size: 0.875rem;
     line-height: 1rem;
     letter-spacing: 0.216667px;
-    text-transform: uppercase;
     color: $text-highlight;
+}
+
+.description {
+    margin: 1rem 0;
+    .mini-title {
+        margin-bottom: 1rem;
+    }
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.text-body {
+    font-size: 1.25rem;
+    line-height: 115.1%;
 }

@@ -1,11 +1,13 @@
 <script>
+    import { fly } from "svelte/transition";
+
     export let segment;
 </script>
 
 <style lang="scss">
     #give-work {
         transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-        position: absolute;
+        position: fixed;
         bottom: 0;
         right: 0;
         &:hover #main-path {
@@ -16,8 +18,9 @@
     }
 </style>
 
-{#if segment === undefined}
+{#if segment === undefined || segment === 'info'}
     <a
+        transition:fly={{ y: 250, x: 80, duration: 250, delay: 500 }}
         href="mailto:info@lookaluca.com"
         target="_blank"
         rel="noopener"

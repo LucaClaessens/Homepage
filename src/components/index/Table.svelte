@@ -1,4 +1,5 @@
 <script>
+    import { goto } from "@sapper/app";
     import { extractYear } from "../../services/formatDate.service";
 
     export let entries, route;
@@ -9,8 +10,8 @@
 <table>
     <thead>
         <tr>
-            <th class="mini-title" align="left">Title</th>
-            <th class="mini-title" align="right">Year</th>
+            <th class="mini-title uppercase" align="left">Title</th>
+            <th class="mini-title uppercase" align="right">Year</th>
         </tr>
     </thead>
     <tbody>
@@ -18,8 +19,8 @@
             <tr
                 class="entry-row hoverable"
                 tabindex="0"
-                on:keydown={(event) => (event.key === 'Enter' ? (window.location = `${route}/${entry.slug}`) : void 0)}
-                on:click={() => (window.location = `${route}/${entry.slug}`)}>
+                on:keydown={(event) => (event.key === 'Enter' ? goto(`${route}/${entry.slug}`) : void 0)}
+                on:click={() => goto(`${route}/${entry.slug}`)}>
                 <td class="title">
                     <h6>{entry.title}</h6>
                 </td>

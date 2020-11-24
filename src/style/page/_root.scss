@@ -4,4 +4,9 @@ p.landing-text {
     line-height: 115.1%;
     letter-spacing: 0.216667px;
     flex: 1;
+    @include bp-small {
+        font-size: 3rem;
+        line-height: 3.5625rem;
+        max-width: 860px;
+    }
 }

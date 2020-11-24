@@ -1,5 +1,5 @@
-$ov-offset: 8px;
-$ov-offset-sm: 4px;
+$ov-offset: 6px;
+$ov-offset-sm: 3px;
 
 a.category-link {
     position: relative;
@@ -38,9 +38,8 @@ span.is-category {
     }
     .cat-background {
         svg {
-            animation: fadeIn 2s cubic-bezier(0.075, 0.82, 0.165, 1);
             width: 100%;
-            height: 100%;
+            // height: 100%;
         }
         pointer-events: none;
         position: absolute;
@@ -48,7 +47,7 @@ span.is-category {
     &.cat-size {
         &__default {
             .cat-background {
-                top: -$ov-offset;
+                top: -$ov-offset / 3;
                 left: -$ov-offset;
                 right: -$ov-offset;
                 bottom: -$ov-offset;
@@ -58,7 +57,7 @@ span.is-category {
         }
         &__small {
             .cat-background {
-                top: -$ov-offset-sm;
+                top: -$ov-offset-sm / 2;
                 left: -$ov-offset-sm;
                 right: -$ov-offset-sm;
                 bottom: -$ov-offset-sm;

@@ -1,6 +1,6 @@
 <script context="module">
     export function preload({ params, query }) {
-        return this.fetch(`posts.json`)
+        return this.fetch(`selected-works.json`)
             .then((r) => r.json())
             .then((entries) => {
                 return { entries };
@@ -9,13 +9,16 @@
 </script>
 
 <script>
+    import { fade } from "svelte/transition";
     import Table from "./../../components/index/Table.svelte";
-    import Overlay from "./components/SelectedWorksOverlay.svelte";
 
     export let entries;
 </script>
 
-<Overlay />
-<section class="table-index" id="selected-works-index">
+<section
+    in:fade={{ delay: 400, duration: 400 }}
+    out:fade={{ duration: 400 }}
+    class="table-index"
+    id="selected-works-index">
     <Table route="/selected-works" {entries} />
 </section>

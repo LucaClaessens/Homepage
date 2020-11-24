@@ -1,0 +1,33 @@
+.post {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    .banner-image {
+        width: calc(100% + 2rem);
+        height: 300px;
+        background: $primary;
+        margin-left: -1rem;
+        margin-top: -40px;
+        border-radius: 2px;
+        @include bp-small {
+            height: 70vh;
+        }
+        .controls {
+            height: 100%;
+            display: flex;
+            padding: 1rem;
+            justify-content: space-between;
+            align-items: center;
+            button {
+                transition: transform 0.3s ease;
+                &:hover {
+                    transition-delay: 0ms;
+                    transform: scale(1.5);
+                }
+            }
+        }
+    }
+    .banner-description {
+        margin: 0.5rem 0 1.5rem;
+    }
+}

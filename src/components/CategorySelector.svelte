@@ -1,4 +1,6 @@
 <script>
+    import { fade } from "svelte/transition";
+
     export let category, icon;
     export let size = "default";
     export let activated = false;
@@ -16,7 +18,7 @@
 <span class="is-category cat-size__{size} {activated ? 'is-activated' : ''}">
     <span class="cat-name">{category}</span>
     {#await svgPromise() then svg}
-        <span class="cat-background">
+        <span class="cat-background" transition:fade>
             {@html svg}
         </span>
     {:catch error}

@@ -1,5 +1,12 @@
 .separator {
+    position: relative;
+    z-index: 1;
     width: 100vw;
     margin-top: 1rem;
     margin-left: -1rem;
+    min-height: 3rem;
+    user-select: none;
+    svg {
+        width: 100%;
+    }
 }

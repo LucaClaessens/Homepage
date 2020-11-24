@@ -2,23 +2,21 @@
   "bundler": "webpack",
   "shimport": null,
   "assets": {
-    "index": "5b8bc5c8b4707bd76e3c/index.index.js",
-    "main": "5b8bc5c8b4707bd76e3c/main.js",
-    "posts_$slug": "5b8bc5c8b4707bd76e3c/posts_$slug.posts_$slug.js",
-    "posts_components_FeaturedImage": "5b8bc5c8b4707bd76e3c/posts_components_FeaturedImage.posts_components_FeaturedImage.js",
-    "posts_components_PostMeta": "5b8bc5c8b4707bd76e3c/posts_components_PostMeta.posts_components_PostMeta.js",
-    "selected$45works": "5b8bc5c8b4707bd76e3c/selected$45works.selected$45works.js",
-    "selected$45works_components_SelectedWorksOverlay": "5b8bc5c8b4707bd76e3c/selected$45works_components_SelectedWorksOverlay.selected$45works_components_SelectedWorksOverlay.js",
-    "vendors~posts_$slug": "5b8bc5c8b4707bd76e3c/vendors~posts_$slug.vendors~posts_$slug.js"
+    "index": "61dbd203028e9d6ae0b7/index.index.js",
+    "info": "61dbd203028e9d6ae0b7/info.info.js",
+    "main": "61dbd203028e9d6ae0b7/main.js",
+    "selected$45works": "61dbd203028e9d6ae0b7/selected$45works.selected$45works.js",
+    "selected$45works_$slug": "61dbd203028e9d6ae0b7/selected$45works_$slug.selected$45works_$slug.js",
+    "selected$45works__layout": "61dbd203028e9d6ae0b7/selected$45works__layout.selected$45works__layout.js",
+    "vendors~selected$45works_$slug": "61dbd203028e9d6ae0b7/vendors~selected$45works_$slug.vendors~selected$45works_$slug.js"
   },
   "css": {
     "chunks": {
       "index.svelte": [],
+      "selected-works/_layout.svelte": [],
       "selected-works/index.svelte": [],
-      "selected-works/components/SelectedWorksOverlay.svelte": [],
-      "posts/components/FeaturedImage.svelte": [],
-      "posts/components/PostMeta.svelte": [],
-      "posts/[slug].svelte": []
+      "selected-works/[slug].svelte": [],
+      "info/index.svelte": []
     }
   }
 }

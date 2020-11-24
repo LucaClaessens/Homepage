@@ -1,6 +1,18 @@
 $bordercolor: #cbcbcb;
 .table-index {
-    margin-top: 1rem;
+    width: 100%;
+    overflow-y: auto;
+    max-width: 800px;
+    margin: 0 auto;
+    table {
+        overflow-y: auto;
+        width: 100%;
+        th {
+            position: sticky;
+            top: 0;
+            background: $bg;
+        }
+    }
 }
 table {
     border-collapse: collapse;
@@ -28,5 +40,12 @@ td.when {
     line-height: 115.1%;
     &::first-letter {
         text-transform: uppercase;
+    }
+}
+tbody {
+    tr {
+        &:hover {
+            color: $primary;
+        }
     }
 }
