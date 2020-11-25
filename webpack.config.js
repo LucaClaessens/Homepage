@@ -48,7 +48,7 @@ module.exports = {
 		mode,
 		plugins: [
 			// pending https://github.com/sveltejs/svelte/issues/2377
-			// dev && new webpack.HotModuleReplacementPlugin(),
+			//dev && new webpack.HotModuleReplacementPlugin(),
 			new webpack.DefinePlugin({
 				'process.browser': true,
 				'process.env.NODE_ENV': JSON.stringify(mode)

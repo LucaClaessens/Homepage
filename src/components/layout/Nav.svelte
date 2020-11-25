@@ -36,7 +36,7 @@
         <CategorySelector
           size="small"
           activated={true}
-          category={segment.replace('-', ' ') + '.'}
+          category={segment.replace('-', ' ')}
           icon="icons/{segment}.svg" /></span>
     {/if}
   </p>

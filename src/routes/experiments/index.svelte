@@ -1,6 +1,6 @@
 <script context="module">
     export function preload({ params, query }) {
-        return this.fetch(`selected-works.json`)
+        return this.fetch(`experiments.json`)
             .then((r) => r.json())
             .then((entries) => {
                 return { entries };
@@ -16,16 +16,15 @@
 </script>
 
 <svelte:head>
-    <title>Luca his archive of selected works</title>
+    <title>Luca his archive of experiments</title>
     <meta
         name="Description"
-        content="Selected works that contain some interesting content." />
+        content="Experiments that contain some interesting content." />
 </svelte:head>
-
 <section
     in:fade={{ delay: 400, duration: 400 }}
     out:fade={{ duration: 400 }}
     class="table-index"
     id="selected-works-index">
-    <Table route="/selected-works" {entries} />
+    <Table route="/experiments" {entries} />
 </section>

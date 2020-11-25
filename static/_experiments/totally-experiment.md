@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: The art of entropy
+title: Totally experimental thing
 featured_media: vimeo_embed
 embed_id: '225098789'
 featured_media_subtitle: Wow so subtitly

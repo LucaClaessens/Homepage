@@ -2,13 +2,19 @@
   "bundler": "webpack",
   "shimport": null,
   "assets": {
-    "index": "61dbd203028e9d6ae0b7/index.index.js",
-    "info": "61dbd203028e9d6ae0b7/info.info.js",
-    "main": "61dbd203028e9d6ae0b7/main.js",
-    "selected$45works": "61dbd203028e9d6ae0b7/selected$45works.selected$45works.js",
-    "selected$45works_$slug": "61dbd203028e9d6ae0b7/selected$45works_$slug.selected$45works_$slug.js",
-    "selected$45works__layout": "61dbd203028e9d6ae0b7/selected$45works__layout.selected$45works__layout.js",
-    "vendors~selected$45works_$slug": "61dbd203028e9d6ae0b7/vendors~selected$45works_$slug.vendors~selected$45works_$slug.js"
+    "experiments": "08ceab2d78634c25b4b7/experiments.experiments.js",
+    "experiments_$slug": "08ceab2d78634c25b4b7/experiments_$slug.experiments_$slug.js",
+    "experiments_$slug~selected$45works_$slug": "08ceab2d78634c25b4b7/experiments_$slug~selected$45works_$slug.experiments_$slug~selected$45works_$slug.js",
+    "experiments__layout": "08ceab2d78634c25b4b7/experiments__layout.experiments__layout.js",
+    "experiments__layout~selected$45works__layout": "08ceab2d78634c25b4b7/experiments__layout~selected$45works__layout.experiments__layout~selected$45works__layout.js",
+    "experiments~selected$45works": "08ceab2d78634c25b4b7/experiments~selected$45works.experiments~selected$45works.js",
+    "index": "08ceab2d78634c25b4b7/index.index.js",
+    "info": "08ceab2d78634c25b4b7/info.info.js",
+    "main": "08ceab2d78634c25b4b7/main.js",
+    "selected$45works": "08ceab2d78634c25b4b7/selected$45works.selected$45works.js",
+    "selected$45works_$slug": "08ceab2d78634c25b4b7/selected$45works_$slug.selected$45works_$slug.js",
+    "selected$45works__layout": "08ceab2d78634c25b4b7/selected$45works__layout.selected$45works__layout.js",
+    "vendors~experiments_$slug~selected$45works_$slug": "08ceab2d78634c25b4b7/vendors~experiments_$slug~selected$45works_$slug.vendors~experiments_$slug~selected$45works_$slug.js"
   },
   "css": {
     "chunks": {
@@ -16,6 +22,9 @@
       "selected-works/_layout.svelte": [],
       "selected-works/index.svelte": [],
       "selected-works/[slug].svelte": [],
+      "experiments/_layout.svelte": [],
+      "experiments/index.svelte": [],
+      "experiments/[slug].svelte": [],
       "info/index.svelte": []
     }
   }

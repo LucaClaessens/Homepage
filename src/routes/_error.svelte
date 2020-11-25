@@ -24,8 +24,8 @@
 <div class="error">
 	<h1>{status}</h1>
 
-	<p class="body-text err-msg">{error.message}</p>
-	<p class="body-text"><a href="/">Take me back home</a></p>
+	<p class="text-body err-msg">{error.message}</p>
+	<p class="text-body"><a href="/">Take me back home</a></p>
 
 	{#if dev && error.stack}
 		<pre>{error.stack}</pre>

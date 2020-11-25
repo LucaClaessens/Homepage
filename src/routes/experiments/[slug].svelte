@@ -2,7 +2,7 @@
     export async function preload({ params, query }) {
         // the `slug` parameter is available because
         // this file is called [slug].svelte
-        const res = await this.fetch(`_selected-works/${params.slug}.md`);
+        const res = await this.fetch(`_experiments/${params.slug}.md`);
 
         if (res.status === 200) {
             return { postMd: await res.text() };

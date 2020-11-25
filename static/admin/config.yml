@@ -14,9 +14,13 @@ collections:
     fields: # The fields for each document, usually in front matter
       - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Type", name: "type", widget: "select", options: ["design", "research", "text", "thought", "ramble"] }
-      - {label: "Featured image", name: "featuredImage", widget: "image", media_library: {config: {multiple: true}}}
-      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Featured media", name: "featured_media", widget: "select", options: ["image", "vimeo_embed"] }
+      - {label: "Images", name: "images", widget: "list", summary: '{{fields.image}}', field: {
+label: "image", name: "image", widget: "image"
+      }}
+      - {label: "Embed ID", name: "embed_id", widget: "string"}
+      - {label: "Featured Media Subtitle", name: "featured_media_subtitle", widget: "text"}
+      - {label: "Short Description", name: "short_description", widget: "text"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "experiments" # Used in routes, e.g., /admin/collections/blog
@@ -27,8 +31,12 @@ collections:
     fields: # The fields for each document, usually in front matter
       - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Type", name: "type", widget: "select", options: ["design", "research", "text", "thought", "ramble"] }
-      - {label: "Featured image", name: "featuredImage", widget: "image", media_library: {config: {multiple: true}}}
-      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Featured media", name: "featured_media", widget: "select", options: ["image", "vimeo_embed", "stackblitz", "other"] }
+      - {label: "Images", name: "images", widget: "list", summary: '{{fields.image}}', field: {
+label: "image", name: "image", widget: "image"
+      }}
+      - {label: "Embed ID", name: "embed_id", widget: "string"}
+      - {label: "Featured Media Subtitle", name: "featured_media_subtitle", widget: "text"}
+      - {label: "Short Description", name: "short_description", widget: "text"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Body", name: "body", widget: "markdown"}

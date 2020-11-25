@@ -3,6 +3,7 @@
 
     const dispatch = createEventDispatcher();
 
+    export let className = "";
     export let size = "default";
     export let dir = "back";
 
@@ -11,6 +12,6 @@
     }
 </script>
 
-<button class="arrow-button size-{size}" on:click={dispatchClick}>
+<button class="arrow-button size-{size} {className}" on:click={dispatchClick}>
     <img src="icons/arrow-{dir}.svg" alt="{dir} arrow" />
 </button>
