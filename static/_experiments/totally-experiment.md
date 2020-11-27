@@ -1,6 +1,7 @@
 ---
 layout: blog
 title: Totally experimental thing
+subtitle: A demo to test the things
 featured_media: vimeo_embed
 embed_id: '225098789'
 featured_media_subtitle: Wow so subtitly

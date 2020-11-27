@@ -33,7 +33,7 @@
 </script>
 
 <svelte:head>
-    <title>{post.title}</title>
+    <title>👾 {post.title}</title>
     <meta name="Description" content="{post.title} | {post.description}" />
 </svelte:head>
 
@@ -42,7 +42,7 @@
     in:fade={{ delay: 400, duration: 400 }}
     out:fade={{ duration: 400 }}>
     {#if post.featured_media === 'image'}
-        <ImageGallery images={post.images} />
+        <ImageGallery images={post.images} alt={post.featured_media_subtitle} />
     {:else if post.featured_media === 'vimeo_embed'}
         <VimeoEmbed videoId={post.embed_id} />
     {/if}

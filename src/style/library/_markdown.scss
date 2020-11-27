@@ -4,18 +4,13 @@
     p {
         font-size: 1.25rem;
         line-height: 1.625rem;
+        margin-bottom: 1.5rem;
     }
 
     a {
         text-decoration: none;
         &:hover {
             opacity: 0.75;
-        }
-        &.external-link:after {
-            content: "↗";
-            font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial;
-            font-size: 0.8rem;
-            padding-left: 4px;
         }
     }
 
@@ -33,5 +28,18 @@
 
     img {
         padding: 2rem 0 0 0;
+    }
+}
+
+a.external-link {
+    color: $primary;
+    * {
+        display: inline-block;
+    }
+    &:after {
+        content: "↗";
+        font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial;
+        font-size: 0.8rem;
+        padding-left: 4px;
     }
 }

@@ -2,7 +2,7 @@ $bordercolor: #cbcbcb;
 .table-index {
     width: 100%;
     overflow-y: auto;
-    max-width: 800px;
+    max-width: 700px;
     margin: 0 auto;
     table {
         overflow-y: auto;
@@ -12,6 +12,9 @@ $bordercolor: #cbcbcb;
             top: 0;
             background: $bg;
         }
+        td {
+            padding: 0.75rem 0.5rem;
+        }
     }
 }
 table {
@@ -19,6 +22,7 @@ table {
     width: calc(100% + 1rem);
     transform: translateX(-0.5rem);
     max-width: 800px;
+    margin-bottom: 1.5rem;
 }
 tr {
     &:focus,
@@ -33,11 +37,18 @@ th {
     padding: 0.5rem;
 }
 td {
-    padding: 0.75rem 0.5rem;
+    padding: 0 0.5rem;
+    span.details {
+        color: $text-highlight;
+        font-size: 1rem;
+        margin-top: 0.25rem;
+        display: inline-block;
+    }
 }
 td.when {
+    vertical-align: top;
+    line-height: 150%;
     font-size: 1.125rem;
-    line-height: 115.1%;
     &::first-letter {
         text-transform: uppercase;
     }

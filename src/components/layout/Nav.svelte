@@ -18,26 +18,28 @@
 <header>
   {#if segment !== undefined}
     <a href={$parentPath} transition:fly={{ x: -200, duration: 250 }}>
-      <ArrowButton dir="back" />
+      <ArrowButton dir="back" focusable={false} />
     </a>
   {/if}
-  <p class="title">
-    Luca his archive of
-    {#if segment == undefined || segment == 'info'}
-      <span
-        in:fly={{ delay: 500, duration: 250, y: -50 }}
-        out:fly={{ duration: 250, y: -50 }}>
-        ramblings
-      </span>
-    {:else}
-      <span
-        in:fly={{ delay: 500, duration: 250, y: -50 }}
-        out:fly={{ duration: 250, y: -50 }}>
-        <CategorySelector
-          size="small"
-          activated={true}
-          category={segment.replace('-', ' ')}
-          icon="icons/{segment}.svg" /></span>
-    {/if}
-  </p>
+  <a href="/">
+    <p class="title">
+      Luca his archive of
+      {#if segment == undefined || segment == 'info'}
+        <span
+          in:fly={{ delay: 500, duration: 250, y: -50 }}
+          out:fly={{ duration: 250, y: -50 }}>
+          ramblings
+        </span>
+      {:else}
+        <span
+          in:fly={{ delay: 500, duration: 250, y: -50 }}
+          out:fly={{ duration: 250, y: -50 }}>
+          <CategorySelector
+            size="small"
+            activated={true}
+            category={segment.replace('-', ' ')}
+            icon="icons/{segment}.svg" /></span>
+      {/if}
+    </p>
+  </a>
 </header>

@@ -4,6 +4,7 @@
     import ArrowButton from "./../../components/ArrowButton.svelte";
 
     export let images = [];
+    export let alt = "An image related to the project";
     let swiper = null;
 
     onMount(() => {
@@ -24,15 +25,34 @@
 <style lang="scss">
     .banner-image {
         position: relative;
+        height: 60vh;
+        .image-wrapper {
+            padding: 1rem;
+        }
+        @include bp-small {
+            height: 400px;
+            .image-wrapper {
+                padding: 0;
+            }
+        }
     }
     .swiper-container {
         height: 100%;
+        @include bp-small {
+            padding: 1rem;
+        }
     }
     .image-wrapper {
-        display: flex;
+        position: relative;
         img {
-            object-fit: cover;
-            width: 100%;
+            width: auto;
+            height: auto;
+            max-width: 100%;
+            max-height: 100%;
+            transform: translate(-50%, -50%);
+            position: absolute;
+            left: 50%;
+            top: 50%;
         }
     }
     .hidden {
@@ -51,10 +71,7 @@
         <div class="swiper-wrapper">
             {#each images as image}
                 <div class="image-wrapper swiper-slide">
-                    <img
-                        src={image}
-                        alt="Post header image"
-                        class="swiper-lazy" />
+                    <img src={image} {alt} class="swiper-lazy" />
                     <div
                         class:hidden={images.length <= 1}
                         class="swiper-lazy-preloader swiper-lazy-preloader-white" />

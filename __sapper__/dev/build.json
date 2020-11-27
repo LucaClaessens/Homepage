@@ -2,19 +2,19 @@
   "bundler": "webpack",
   "shimport": null,
   "assets": {
-    "experiments": "92bf9ba40a74e0c6d60f/experiments.experiments.js",
-    "experiments_$slug": "92bf9ba40a74e0c6d60f/experiments_$slug.experiments_$slug.js",
-    "experiments_$slug~selected$45works_$slug": "92bf9ba40a74e0c6d60f/experiments_$slug~selected$45works_$slug.experiments_$slug~selected$45works_$slug.js",
-    "experiments__layout": "92bf9ba40a74e0c6d60f/experiments__layout.experiments__layout.js",
-    "experiments__layout~selected$45works__layout": "92bf9ba40a74e0c6d60f/experiments__layout~selected$45works__layout.experiments__layout~selected$45works__layout.js",
-    "experiments~selected$45works": "92bf9ba40a74e0c6d60f/experiments~selected$45works.experiments~selected$45works.js",
-    "index": "92bf9ba40a74e0c6d60f/index.index.js",
-    "info": "92bf9ba40a74e0c6d60f/info.info.js",
-    "main": "92bf9ba40a74e0c6d60f/main.js",
-    "selected$45works": "92bf9ba40a74e0c6d60f/selected$45works.selected$45works.js",
-    "selected$45works_$slug": "92bf9ba40a74e0c6d60f/selected$45works_$slug.selected$45works_$slug.js",
-    "selected$45works__layout": "92bf9ba40a74e0c6d60f/selected$45works__layout.selected$45works__layout.js",
-    "vendors~experiments_$slug~selected$45works_$slug": "92bf9ba40a74e0c6d60f/vendors~experiments_$slug~selected$45works_$slug.vendors~experiments_$slug~selected$45works_$slug.js"
+    "experiments": "f9eee6f111e6a3bdd11d/experiments.experiments.js",
+    "experiments_$slug": "f9eee6f111e6a3bdd11d/experiments_$slug.experiments_$slug.js",
+    "experiments_$slug~selected$45works_$slug": "f9eee6f111e6a3bdd11d/experiments_$slug~selected$45works_$slug.experiments_$slug~selected$45works_$slug.js",
+    "experiments__layout": "f9eee6f111e6a3bdd11d/experiments__layout.experiments__layout.js",
+    "experiments__layout~selected$45works__layout": "f9eee6f111e6a3bdd11d/experiments__layout~selected$45works__layout.experiments__layout~selected$45works__layout.js",
+    "experiments~selected$45works": "f9eee6f111e6a3bdd11d/experiments~selected$45works.experiments~selected$45works.js",
+    "index": "f9eee6f111e6a3bdd11d/index.index.js",
+    "info": "f9eee6f111e6a3bdd11d/info.info.js",
+    "main": "f9eee6f111e6a3bdd11d/main.js",
+    "selected$45works": "f9eee6f111e6a3bdd11d/selected$45works.selected$45works.js",
+    "selected$45works_$slug": "f9eee6f111e6a3bdd11d/selected$45works_$slug.selected$45works_$slug.js",
+    "selected$45works__layout": "f9eee6f111e6a3bdd11d/selected$45works__layout.selected$45works__layout.js",
+    "vendors~experiments_$slug~selected$45works_$slug": "f9eee6f111e6a3bdd11d/vendors~experiments_$slug~selected$45works_$slug.vendors~experiments_$slug~selected$45works_$slug.js"
   },
   "css": {
     "chunks": {

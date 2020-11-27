@@ -33,8 +33,10 @@
 </script>
 
 <svelte:head>
-    <title>{post.title}</title>
-    <meta name="Description" content="{post.title} | {post.description}" />
+    <title>✍🏼 {post.title}</title>
+    <meta
+        name="Description"
+        content="{post.title} | {post.short_description}" />
 </svelte:head>
 
 <div
@@ -42,7 +44,7 @@
     in:fade={{ delay: 400, duration: 400 }}
     out:fade={{ duration: 400 }}>
     {#if post.featured_media === 'image'}
-        <ImageGallery images={post.images} />
+        <ImageGallery images={post.images} alt={post.featured_media_subtitle} />
     {:else if post.featured_media === 'vimeo_embed'}
         <VimeoEmbed videoId={post.embed_id} />
     {/if}
@@ -58,15 +60,32 @@
         </tr>
         <tr>
             <td class="title" align="left">
-                <h6>{post.title}</h6>
+                {#if post.url}
+                    <div class="description">
+                        <a href={post.url} class="external-link"><h6>
+                                {post.title}
+                            </h6></a>
+                    </div>
+                {:else}
+                    <h6>{post.title}</h6>
+                {/if}
             </td>
             <td class="when" align="right">{formatDate(post.date)}</td>
         </tr>
     </table>
-
-    <div class="description">
-        <p class="mini-title uppercase">Description</p>
-        <p class="text-body">{post.short_description}</p>
-    </div>
+    {#if post.responsibilities}
+        <table>
+            <tr>
+                <th class="mini-title uppercase" align="left">
+                    Responsibilities
+                </th>
+            </tr>
+            <tr>
+                <td class="title" align="left">
+                    <p class="text-body">{post.responsibilities}</p>
+                </td>
+            </tr>
+        </table>
+    {/if}
     <MarkdownRenderer markdown={post.markdown} />
 </div>

@@ -14,12 +14,14 @@ collections:
     fields: # The fields for each document, usually in front matter
       - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
       - {label: "Title", name: "title", widget: "string"}
+      - {label: "Subtitle", name: "subtitle", widget: "text"}
+      - {label: "Responsibilities", name: "responsibilities", widget: "string"}
+      - {label: "Web address", name: "url", widget: "string"}
       - {label: "Featured media", name: "featured_media", widget: "select", options: ["image", "vimeo_embed"] }
-      - {label: "Images", name: "images", widget: "list", summary: '{{fields.image}}', field: {
-label: "image", name: "image", widget: "image"
-      }}
+      - {label: "Images", name: "images", widget: "list", summary: '{{fields.image}}', field: {label: "image", name: "image", widget: "image"}}
       - {label: "Embed ID", name: "embed_id", widget: "string"}
       - {label: "Featured Media Subtitle", name: "featured_media_subtitle", widget: "text"}
+      - {label: "Overview image", name: "overview_image", widget: "image"}
       - {label: "Short Description", name: "short_description", widget: "text"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Body", name: "body", widget: "markdown"}
@@ -31,12 +33,15 @@ label: "image", name: "image", widget: "image"
     fields: # The fields for each document, usually in front matter
       - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
       - {label: "Title", name: "title", widget: "string"}
+      - {label: "Subtitle", name: "subtitle", widget: "text"}
+      - {label: "Web address", name: "url", widget: "string"}
       - {label: "Featured media", name: "featured_media", widget: "select", options: ["image", "vimeo_embed", "stackblitz", "other"] }
       - {label: "Images", name: "images", widget: "list", summary: '{{fields.image}}', field: {
 label: "image", name: "image", widget: "image"
       }}
       - {label: "Embed ID", name: "embed_id", widget: "string"}
       - {label: "Featured Media Subtitle", name: "featured_media_subtitle", widget: "text"}
+      - {label: "Overview image", name: "overview_image", widget: "image"}
       - {label: "Short Description", name: "short_description", widget: "text"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Body", name: "body", widget: "markdown"}
