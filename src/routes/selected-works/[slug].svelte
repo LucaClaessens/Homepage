@@ -17,11 +17,11 @@
     import fm from "front-matter";
     import { derived } from "svelte/store";
     import Article from "../../components/article/Article.svelte";
+    import { page_host } from "./../../core/config";
 
     const { page } = stores();
 
     const path = derived(page, ($page) => $page.path);
-    const host = derived(page, ($page) => $page.host);
 
     export let postMd;
 
@@ -36,8 +36,8 @@
     <title>✍🏼 {post.title}</title>
     <meta property="og:title" content={post.title} />
     <meta property="og:description" content={post.subtitle} />
-    <meta property="og:image" content="{$host}/{post.overview_image}.png" />
-    <meta property="og:url" content="{$host}{$path}" />
+    <meta property="og:image" content="{page_host}/{post.overview_image}.png" />
+    <meta property="og:url" content="{page_host}{$path}" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="Description" content="{post.title} | {post.subtitle}" />
 </svelte:head>
