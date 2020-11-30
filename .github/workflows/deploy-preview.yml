@@ -9,8 +9,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      # Build steps
-      - run: npm run export
+      - uses: c-hive/gha-npm-cache@v1
+      - name: Install JS dependencies
+        run: npm install
+      - name: Export static bundle
+        run: npm run export
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: "${{ secrets.GITHUB_TOKEN }}"
