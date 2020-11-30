@@ -34,7 +34,7 @@
                             class="img"
                             in:fade={{ delay: 400, duration: 400 }}
                             out:fade={{ duration: 400 }}
-                            style="background-image: url({entry.overview_image});" />
+                            style="background-image: url({entry.overview_image});background-size: {entry.overview_style};" />
                     {/if}
                 {/each}
             </div>

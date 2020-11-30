@@ -22,6 +22,7 @@ collections:
       - {label: "Embed ID", name: "embed_id", widget: "string"}
       - {label: "Featured Media Subtitle", name: "featured_media_subtitle", widget: "text"}
       - {label: "Overview image", name: "overview_image", widget: "image"}
+      - {label: "Overview style", name: "overview_style", widget: "select", options: ["cover", "contain"] }
       - {label: "Short Description", name: "short_description", widget: "text"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Body", name: "body", widget: "markdown"}
@@ -42,6 +43,7 @@ label: "image", name: "image", widget: "image"
       - {label: "Embed ID", name: "embed_id", widget: "string"}
       - {label: "Featured Media Subtitle", name: "featured_media_subtitle", widget: "text"}
       - {label: "Overview image", name: "overview_image", widget: "image"}
+            - {label: "Overview style", name: "overview_style", widget: "select", options: ["cover", "contain"] }
       - {label: "Short Description", name: "short_description", widget: "text"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Body", name: "body", widget: "markdown"}

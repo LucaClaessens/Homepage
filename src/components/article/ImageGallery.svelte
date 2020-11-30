@@ -1,6 +1,6 @@
 <script>
     import { onDestroy, onMount } from "svelte";
-    import Swiper, { A11y, Keyboard, Lazy, Navigation } from "swiper";
+    import Swiper, { A11y, Keyboard, Lazy, Navigation, Zoom } from "swiper";
     import ArrowButton from "./../../components/ArrowButton.svelte";
 
     export let images = [];
@@ -8,13 +8,16 @@
     let swiper = null;
 
     onMount(() => {
-        swiper = Swiper.use([Navigation, Lazy, A11y, Keyboard]);
+        swiper = Swiper.use([Navigation, Lazy, A11y, Keyboard, Zoom]);
 
         new Swiper(".swiper-container", {
             lazy: images.length > 1,
             navigation: {
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
+            },
+            zoom: {
+                maxRatio: 5,
             },
         });
     });
@@ -25,12 +28,19 @@
 <style lang="scss">
     .banner-image {
         position: relative;
-        height: 60vh;
+        height: 70vh;
+        min-height: 400px;
         .image-wrapper {
             padding: 1rem;
         }
         @include bp-small {
-            height: 400px;
+            // height: 400px;
+            .image-wrapper {
+                padding: 0;
+            }
+        }
+        @include bp-medium {
+            // height: auto;
             .image-wrapper {
                 padding: 0;
             }
