@@ -5,4 +5,8 @@ a {
     &:focus {
         color: $primary;
     }
+    &.hidden,
+    [hidden] {
+        display: none;
+    }
 }

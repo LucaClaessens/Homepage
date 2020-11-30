@@ -23,10 +23,11 @@
             justify-content: space-between;
             align-items: center;
             button {
-                transition: transform 0.3s ease;
+                opacity: 1;
+                transition: opacity 0.3s ease;
                 &:hover {
                     transition-delay: 0ms;
-                    transform: scale(1.5);
+                    opacity: 0.75;
                 }
             }
         }

@@ -10,6 +10,7 @@
         position: fixed;
         bottom: 0;
         right: 0;
+        clip-path: url(#clip0);
         &:hover #main-path {
             stroke: $primary;
             stroke-width: 4px;

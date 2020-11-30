@@ -5,6 +5,15 @@
     let showContact = false;
 </script>
 
+<style lang="scss">
+    a.mailto-text {
+        font-size: 0.75rem;
+        @include bp-small {
+            font-size: inherit;
+        }
+    }
+</style>
+
 <footer>
     {#if !showContact}
         <h6
@@ -25,6 +34,7 @@
                 <ArrowButton dir="back" size="small" />
             </span>
             <a
+                class="mailto-text"
                 href="mailto:info@lookaluca.com"
                 target="_blank"
                 rel="noopener">info@lookaluca.com</a>

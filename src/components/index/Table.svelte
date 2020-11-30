@@ -27,6 +27,7 @@
                 on:keydown={(event) => (event.key === 'Enter' ? goto(`${route}/${entry.slug}`) : void 0)}
                 on:click={() => goto(`${route}/${entry.slug}`)}>
                 <td class="title">
+                    <a hidden href="{route}/{entry.slug}" class="hidden">🕷</a>
                     <h6>{entry.title}</h6>
                     <span class="details">{entry.subtitle}</span>
                 </td>

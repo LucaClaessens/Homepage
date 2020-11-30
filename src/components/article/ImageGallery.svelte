@@ -1,6 +1,6 @@
 <script>
     import { onDestroy, onMount } from "svelte";
-    import Swiper, { A11y, Keyboard, Lazy, Navigation, Zoom } from "swiper";
+    import Swiper, { A11y, Keyboard, Lazy, Navigation } from "swiper";
     import ArrowButton from "./../../components/ArrowButton.svelte";
 
     export let images = [];
@@ -8,16 +8,13 @@
     let swiper = null;
 
     onMount(() => {
-        swiper = Swiper.use([Navigation, Lazy, A11y, Keyboard, Zoom]);
+        swiper = Swiper.use([Navigation, Lazy, A11y, Keyboard]);
 
         new Swiper(".swiper-container", {
             lazy: images.length > 1,
             navigation: {
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
-            },
-            zoom: {
-                maxRatio: 5,
             },
         });
     });
