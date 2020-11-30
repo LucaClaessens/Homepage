@@ -8,6 +8,12 @@
   let delay = new Promise((res) => setTimeout(() => res(), 400));
 </script>
 
+<style>
+  .crawler-content {
+    display: none;
+  }
+</style>
+
 <svelte:head>
   <title>Luca his archive of ramblings</title>
   <meta
@@ -18,7 +24,12 @@
   class="landing-text"
   in:fade={{ delay: 800, duration: 400 }}
   out:fade={{ duration: 400 }}>
-  {#await delay then awaited}
+  {#await delay}
+    <div class="crawler-content">
+      <a hidden href="/selected-works" class="hidden-link">🕷</a>
+      <a hidden href="/experiments" class="hidden-link">🕷</a>
+    </div>
+  {:then awaited}
     {#if !$media.medium}
       Hi, this is where I share
       <a href="/selected-works" class="category-link">
