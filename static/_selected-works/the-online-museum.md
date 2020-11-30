@@ -5,12 +5,12 @@ title: The Online Museum
 subtitle: Exploration of the shape and role of a museum as digital entity
 featured_media: image
 images:
-    - uploads/online-museum/landing.webp
-    - uploads/online-museum/collection.webp
-    - uploads/online-museum/font.webp
-    - uploads/online-museum/ads.webp
+    - uploads/online-museum/landing
+    - uploads/online-museum/collection
+    - uploads/online-museum/font
+    - uploads/online-museum/ads
 featured_media_subtitle: Screens from the exhibition 'Still life with ____' 
-overview_image: uploads/online-museum/landing.webp
+overview_image: uploads/online-museum/landing
 overview_style: contain
 short_description: hehe
 date: 2020-01-24T22:28:57.790Z

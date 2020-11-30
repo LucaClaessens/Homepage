@@ -30,11 +30,21 @@
             <div class="image-preview">
                 {#each entries as entry}
                     {#if entry === entries[hoveredRow] && entry.overview_image}
-                        <div
-                            class="img"
-                            in:fade={{ delay: 400, duration: 400 }}
-                            out:fade={{ duration: 400 }}
-                            style="background-image: url({entry.overview_image});background-size: {entry.overview_style};" />
+                        <picture>
+                            <source
+                                srcset="{entry.overview_image}.webp"
+                                type="image/webp" />
+                            <source
+                                srcset="{entry.overview_image}.png"
+                                type="image/png" />
+
+                            <img
+                                class="object-fit-{entry.overview_style}"
+                                in:fade={{ delay: 400, duration: 400 }}
+                                out:fade={{ duration: 400 }}
+                                src="{entry.overview_image}.png"
+                                alt="Overview image for project {entry.title}" />
+                        </picture>
                     {/if}
                 {/each}
             </div>

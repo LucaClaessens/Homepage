@@ -5,7 +5,7 @@ subtitle: A deep dive into smart cities, presenting you with unexpected informat
 featured_media: vimeo_embed
 embed_id: '225098789'
 featured_media_subtitle: Video showing the ubiquity platform
-overview_image: uploads/ubiquity/main.webp
+overview_image: uploads/ubiquity/main
 overview_style: contain
 short_description: Ubiquity aims to empower users to re-contextualise the information they gained on a specific topic, by providing a platform that provides a set of tools to dissect information and engage with other people invested in the topic
 date: 2017-08-24T22:28:57.790Z
@@ -30,7 +30,7 @@ understanding of the topic at hand.
 
 By allowing visitors to align themselves with a background and a set level of understanding of the topic, the system could be seeded to reccomend content.
 
-![The picker dialog that seeded the system](uploads/ubiquity/picker.webp)
+![The picker dialog that seeded the system](uploads/ubiquity/picker.png)
 
 # Extensibility
 

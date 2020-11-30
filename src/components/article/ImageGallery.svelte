@@ -81,7 +81,18 @@
         <div class="swiper-wrapper">
             {#each images as image}
                 <div class="image-wrapper swiper-slide">
-                    <img src={image} {alt} class="swiper-lazy" />
+                    <picture>
+                        <source
+                            srcset="{image}.webp"
+                            type="image/webp"
+                            class="swiper-lazy" />
+                        <source
+                            srcset="{image}.png"
+                            type="image/png"
+                            class="swiper-lazy" />
+
+                        <img src="{image}.png" {alt} class="swiper-lazy" />
+                    </picture>
                     <div
                         class:hidden={images.length <= 1}
                         class="swiper-lazy-preloader swiper-lazy-preloader-white" />

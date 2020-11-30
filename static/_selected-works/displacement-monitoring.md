@@ -4,11 +4,11 @@ title: Displacement monitoring
 subtitle: Real time insights into displacement of destabilized residences
 featured_media: image
 images:
-    - uploads/displacement/renderframe_side_2@4x.webp
-    - uploads/displacement/renderframe_side@4x.webp
-    - uploads/displacement/renderframe@4x.webp
+    - uploads/displacement/renderframe_side_2@4x
+    - uploads/displacement/renderframe_side@4x
+    - uploads/displacement/renderframe@4x
 featured_media_subtitle: Compilation of screens in the application
-overview_image: uploads/displacement/mockup@2x.webp
+overview_image: uploads/displacement/mockup@2x
 overview_style: cover
 short_description: hehe
 date: 2020-06-24T22:28:57.790Z
