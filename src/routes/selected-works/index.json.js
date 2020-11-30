@@ -6,7 +6,7 @@ import path from 'path';
 export async function get(req, res) {
     // List the Markdown files and return their filenames
     const posts = await new Promise((resolve, reject) =>
-        glob('static/_projects/*.md', (err, files) => {
+        glob('static/_selected-works/*.md', (err, files) => {
             if (err) return reject(err);
             return resolve(files);
         }),

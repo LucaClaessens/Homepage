@@ -2,12 +2,30 @@
   "bundler": "webpack",
   "shimport": null,
   "assets": {
-    "index": "1007213919f657499d7c/index.index.js",
-    "main": "1007213919f657499d7c/main.js"
+    "experiments": "6cf6e95a97b79f440cd7/experiments.experiments.js",
+    "experiments_$slug": "6cf6e95a97b79f440cd7/experiments_$slug.experiments_$slug.js",
+    "experiments_$slug~selected$45works_$slug": "6cf6e95a97b79f440cd7/experiments_$slug~selected$45works_$slug.experiments_$slug~selected$45works_$slug.js",
+    "experiments__layout": "6cf6e95a97b79f440cd7/experiments__layout.experiments__layout.js",
+    "experiments__layout~selected$45works__layout": "6cf6e95a97b79f440cd7/experiments__layout~selected$45works__layout.experiments__layout~selected$45works__layout.js",
+    "experiments~selected$45works": "6cf6e95a97b79f440cd7/experiments~selected$45works.experiments~selected$45works.js",
+    "index": "6cf6e95a97b79f440cd7/index.index.js",
+    "info": "6cf6e95a97b79f440cd7/info.info.js",
+    "main": "6cf6e95a97b79f440cd7/main.js",
+    "selected$45works": "6cf6e95a97b79f440cd7/selected$45works.selected$45works.js",
+    "selected$45works_$slug": "6cf6e95a97b79f440cd7/selected$45works_$slug.selected$45works_$slug.js",
+    "selected$45works__layout": "6cf6e95a97b79f440cd7/selected$45works__layout.selected$45works__layout.js",
+    "vendors~experiments_$slug~selected$45works_$slug": "6cf6e95a97b79f440cd7/vendors~experiments_$slug~selected$45works_$slug.vendors~experiments_$slug~selected$45works_$slug.js"
   },
   "css": {
     "chunks": {
-      "index.svelte": []
+      "index.svelte": [],
+      "selected-works/_layout.svelte": [],
+      "selected-works/index.svelte": [],
+      "selected-works/[slug].svelte": [],
+      "experiments/_layout.svelte": [],
+      "experiments/index.svelte": [],
+      "experiments/[slug].svelte": [],
+      "info/index.svelte": []
     }
   }
 }

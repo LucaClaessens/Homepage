@@ -1,9 +1,9 @@
 {
-	"background_color": "#ffffff",
-	"theme_color": "#333333",
-	"name": "Luca Claessens",
-	"short_name": "Luca Claessens",
-	"display": "minimal-ui",
+	"background_color": "#d8d8d8",
+	"theme_color": "#1f8bef",
+	"name": "Luca his archive of ramblings",
+	"short_name": "Luca his archive of ramblings",
+	"display": "standalone",
 	"start_url": "/",
 	"icons": [
 		{

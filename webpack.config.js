@@ -17,6 +17,9 @@ const preprocessOptions = {
 		plugins: [
 			require('autoprefixer'),
 		]
+	},
+	scss: {
+		data: `@import '${path.join(process.cwd(), 'src/style/_variables.scss')}';`
 	}
 }
 
@@ -36,6 +39,7 @@ module.exports = {
 							hydratable: true,
 							hotReload: false,
 							emitCss: false,
+							preprocess: autoPreprocess(preprocessOptions)
 						}
 					}
 				}
@@ -44,7 +48,7 @@ module.exports = {
 		mode,
 		plugins: [
 			// pending https://github.com/sveltejs/svelte/issues/2377
-			// dev && new webpack.HotModuleReplacementPlugin(),
+			//dev && new webpack.HotModuleReplacementPlugin(),
 			new webpack.DefinePlugin({
 				'process.browser': true,
 				'process.env.NODE_ENV': JSON.stringify(mode)

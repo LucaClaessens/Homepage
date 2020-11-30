@@ -1,0 +1,49 @@
+.content {
+    padding: 2rem 0;
+
+    p {
+        font-size: 1.25rem;
+        line-height: 1.625rem;
+        margin-bottom: 1.5rem;
+    }
+
+    a {
+        text-decoration: none;
+        &:hover {
+            opacity: 0.75;
+        }
+    }
+
+    figure {
+        margin: 2rem 0;
+        img {
+            padding-top: 0;
+            max-width: 100%;
+            border-radius: 4px;
+            background: $secondary;
+        }
+        figcaption {
+            magin-top: 1rem;
+        }
+    }
+
+    img {
+        padding: 2rem 0 0 0;
+    }
+}
+
+a.external-link {
+    opacity: 0.5;
+    &:hover {
+        opacity: 1;
+    }
+    * {
+        display: inline-block;
+    }
+    &:after {
+        content: "↗";
+        font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial;
+        font-size: 0.8rem;
+        padding-left: 4px;
+    }
+}

@@ -1,0 +1,69 @@
+$ov-offset: 6px;
+$ov-offset-sm: 3px;
+
+a.category-link {
+    position: relative;
+    color: $text;
+    text-decoration: none;
+    &:focus,
+    &:hover {
+        outline: none;
+        .cat-background path {
+            stroke: $primary;
+            stroke-width: 0.25rem;
+        }
+    }
+    &__disabled {
+        pointer-events: none;
+        ::after {
+            position: absolute;
+            content: "";
+            top: 38%;
+            left: 3%;
+            width: 95%;
+            height: 27%;
+            background-color: $primary;
+            transform: rotate(2.31deg);
+        }
+    }
+}
+
+span.is-category {
+    position: relative;
+    cursor: pointer;
+    &.is-activated {
+        .cat-background path {
+            stroke: $secondary;
+        }
+    }
+    .cat-background {
+        svg {
+            width: 100%;
+            // height: 100%;
+        }
+        pointer-events: none;
+        position: absolute;
+    }
+    &.cat-size {
+        &__default {
+            .cat-background {
+                top: -$ov-offset / 3;
+                left: -$ov-offset;
+                right: -$ov-offset;
+                bottom: -$ov-offset;
+                width: calc(100% + #{2 * $ov-offset});
+                height: calc(100% + #{2 * $ov-offset});
+            }
+        }
+        &__small {
+            .cat-background {
+                top: -$ov-offset-sm / 2;
+                left: -$ov-offset-sm;
+                right: -$ov-offset-sm;
+                bottom: -$ov-offset-sm;
+                width: calc(100% + #{2 * $ov-offset-sm});
+                height: calc(100% + #{2 * $ov-offset-sm});
+            }
+        }
+    }
+}

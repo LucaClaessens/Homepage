@@ -1,0 +1,13 @@
+footer {
+    text-transform: uppercase;
+    position: relative;
+    height: 27px;
+    h6 {
+        position: absolute;
+        display: flex;
+        align-items: center;
+    }
+    button {
+        margin-right: 1rem;
+    }
+}

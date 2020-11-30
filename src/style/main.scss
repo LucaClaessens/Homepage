@@ -1,7 +1,58 @@
-@import 'variables';
+@import "variables";
 
 // Import libraries
-@import 'library/breakpoint';
-@import 'library/typography';
+@import "library/breakpoint";
+@import "library/typography";
+@import "library/modifiers";
+@import "library/darkmode";
+@import "library/animations";
+@import "library/markdown";
+@import "library/syntax-highlighting";
 // import base files
-@import 'base/normalize';
+@import "base/normalize";
+
+// import components
+@import "components/links";
+@import "components/header";
+@import "components/buttons";
+@import "components/categories";
+@import "components/footer";
+@import "components/separators";
+@import "components/table";
+@import "components/post";
+@import "components/list-index";
+
+// import page specific shit
+@import "page/root";
+
+* {
+    box-sizing: border-box;
+}
+html,
+body,
+#sapper {
+    margin: 0 auto;
+    padding: 0;
+    background-color: $bg;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    hyphens: auto;
+    text-rendering: optimizeLegibility;
+}
+
+#sapper {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    main {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        min-height: 1px;
+    }
+}

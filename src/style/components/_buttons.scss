@@ -1,0 +1,29 @@
+button {
+    border: none;
+    cursor: pointer;
+    &.arrow-button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 100%;
+        background-color: $tertiary;
+        &.size-default {
+            height: 2.4375rem;
+            width: 2.4375rem;
+        }
+        &.size-small {
+            height: 1.625rem;
+            width: 1.625rem;
+            img {
+                transform: translate(-1px, -1px);
+                width: 13px;
+            }
+        }
+    }
+}
+
+button.arrow-button::after {
+    content: none !important;
+    width: 0;
+    height: 0;
+}

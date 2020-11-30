@@ -10,3 +10,19 @@ $bp-medium: 767px;
 $bp-large: 1023px;
 $bp-xlarge: 1279px;
 $bp-full: 1599px;
+
+@import "./library/breakpoint";
+
+/*
+|--------------------------------------------------------------------------
+| Color scheme
+|--------------------------------------------------------------------------
+*/
+$bg: #d8d8d8;
+$primary: #1f8bef;
+$secondary: #ef321f;
+$tertiary: #fcd903;
+$text: #000000;
+$text-highlight: #6d6d6d;
+$link: $primary;
+$focus: $secondary;
