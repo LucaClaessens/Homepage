@@ -6,6 +6,13 @@ Commands
 -----
 A few simple scripts are available:
 
-* `start` - Starts a local devserver on port 3000, with liveReloading enabled.
+* `dev` - Starts a local development server on port 3000.
 * `build` - Builds the source files into a dist folder.
-* `deploy` - Builds the code, then deploys to firebase.
+* `export` - Generate static files
+* `deploy` - Builds the code, then deploys to firebase. Somehow circumventing netlify here. Don't remember why.
+
+Todos
+-----
+
+* Handle image fallbacks for safari
+* Resolve mangled firebase / netlify  dependencies
