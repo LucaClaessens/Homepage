@@ -10,7 +10,7 @@
 
 <script>
     import IndexLayout from "./../../components/index/IndexLayout.svelte";
-    import { page_host } from "./../core/config";
+    import { page_host } from "./../../core/config";
 
     export let entries;
 </script>
