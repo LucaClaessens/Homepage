@@ -9,10 +9,10 @@ A few simple scripts are available:
 * `dev` - Starts a local development server on port 3000.
 * `build` - Builds the source files into a dist folder.
 * `export` - Generate static files
-* `deploy` - Builds the code, then deploys to firebase. Somehow circumventing netlify here. Don't remember why.
+* `deploy` - Generates a static website, then deploys to firebase.
 
 Todos
 -----
 
-* Handle image fallbacks for safari
-* Resolve mangled firebase / netlify  dependencies
+* ✅ Handle image fallbacks for safari
+* ✅ Resolve mangled firebase / netlify  dependencies
