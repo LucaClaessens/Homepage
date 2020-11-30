@@ -45,10 +45,4 @@
             <li>Zzapps, 2018&mdash;2020</li>
         </ul>
     </div>
-    <div class="information-qualifications">
-        <div class="mini-title uppercase">Achievements</div>
-        <ul>
-            <li>No</li>
-        </ul>
-    </div>
 </section>
