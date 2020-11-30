@@ -15,15 +15,14 @@ collections:
       - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Subtitle", name: "subtitle", widget: "text"}
-      - {label: "Responsibilities", name: "responsibilities", widget: "string"}
-      - {label: "Web address", name: "url", widget: "string"}
-      - {label: "Featured media", name: "featured_media", widget: "select", options: ["image", "vimeo_embed"] }
-      - {label: "Images", name: "images", widget: "list", summary: '{{fields.image}}', field: {label: "image", name: "image", widget: "image"}}
-      - {label: "Embed ID", name: "embed_id", widget: "string"}
-      - {label: "Featured Media Subtitle", name: "featured_media_subtitle", widget: "text"}
+      - {label: "Responsibilities", required: false,  name: "responsibilities", widget: "string"}
+      - {label: "Web address", name: "url", widget: "string", required: false}
+      - {label: "Featured media", required: false, name: "featured_media", widget: "select", options: ["image", "vimeo_embed"] }
+      - {label: "Images", name: "images", widget: "list",required: false, summary: '{{fields.image}}', field: {label: "image", name: "image", widget: "image"}}
+      - {label: "Embed ID",required: false, name: "embed_id", widget: "string"}
+      - {label: "Featured Media Subtitle", required: false, name: "featured_media_subtitle", widget: "text"}
       - {label: "Overview image", name: "overview_image", widget: "image"}
       - {label: "Overview style", name: "overview_style", widget: "select", options: ["cover", "contain"] }
-      - {label: "Short Description", name: "short_description", widget: "text"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "experiments" # Used in routes, e.g., /admin/collections/blog
@@ -35,15 +34,12 @@ collections:
       - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Subtitle", name: "subtitle", widget: "text"}
-      - {label: "Web address", name: "url", widget: "string"}
-      - {label: "Featured media", name: "featured_media", widget: "select", options: ["image", "vimeo_embed", "stackblitz", "other"] }
-      - {label: "Images", name: "images", widget: "list", summary: '{{fields.image}}', field: {
-label: "image", name: "image", widget: "image"
-      }}
-      - {label: "Embed ID", name: "embed_id", widget: "string"}
-      - {label: "Featured Media Subtitle", name: "featured_media_subtitle", widget: "text"}
+      - {label: "Web address", required: false, name: "url", widget: "string"}
+      - {label: "Featured media", required: false,  name: "featured_media", widget: "select", options: ["image", "vimeo_embed", "stackblitz", "other"] }
+      - {label: "Images", required: false, name: "images", widget: "list", summary: '{{fields.image}}', field: {label: "image", name: "image", widget: "image"}}
+      - {label: "Embed ID", required: false, name: "embed_id", widget: "string"}
+      - {label: "Featured Media Subtitle",required: false, name: "featured_media_subtitle", widget: "text"}
       - {label: "Overview image", name: "overview_image", widget: "image"}
-            - {label: "Overview style", name: "overview_style", widget: "select", options: ["cover", "contain"] }
-      - {label: "Short Description", name: "short_description", widget: "text"}
+      - {label: "Overview style", name: "overview_style", widget: "select", options: ["cover", "contain"] }
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Body", name: "body", widget: "markdown"}
