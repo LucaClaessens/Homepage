@@ -17,3 +17,4 @@ Todos
 * ✅ Handle image fallbacks for safari
 * ✅ Resolve mangled firebase / netlify  dependencies
 * ✅ Make markdown renderer create `picture` in `figure` elements for images to support `source` tags and load images based on browser support.
+* Find a way to automate selection of host for SEO and meta tag purposes. (use github action env variables??)
