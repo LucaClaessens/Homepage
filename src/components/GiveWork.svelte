@@ -1,5 +1,6 @@
 <script>
     import { fly } from "svelte/transition";
+    import { media } from "./../stores/media.store";
 
     export let segment;
 </script>
@@ -19,7 +20,7 @@
     }
 </style>
 
-{#if segment === undefined || segment === 'info'}
+{#if segment === undefined || segment === 'info' || $media.large}
     <a
         transition:fly={{ y: 250, x: 80, duration: 250, delay: 500 }}
         href="mailto:info@lookaluca.com"
