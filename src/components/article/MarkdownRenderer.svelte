@@ -3,15 +3,16 @@
     import MarkdownIt from "markdown-it";
     import markdownItAbbr from "markdown-it-abbr";
     import markdownItFootnote from "markdown-it-footnote";
-    import implicitFigures from "markdown-it-implicit-figures";
     import { onMount } from "svelte";
     import markdownItExternalLinks from "../../services/markdown/markdown-it-external-links";
+    import markdownItFigureAndPicture from "../../services/markdown/markdown-it-image-renderer";
 
     export let markdown;
     let parsedMarkdown;
 
     onMount(() => {
         const md = new MarkdownIt({
+            html: true,
             highlight: function (str, lang) {
                 if (lang && hljs.getLanguage(lang)) {
                     try {
@@ -35,10 +36,7 @@
             .use(markdownItExternalLinks, {
                 className: "external-link",
             })
-            .use(implicitFigures, {
-                dataType: true,
-                figcaption: true,
-            });
+            .use(markdownItFigureAndPicture);
 
         parsedMarkdown = md.render(markdown);
     });

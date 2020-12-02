@@ -16,3 +16,4 @@ Todos
 
 * ✅ Handle image fallbacks for safari
 * ✅ Resolve mangled firebase / netlify  dependencies
+* ✅ Make markdown renderer create `picture` in `figure` elements for images to support `source` tags and load images based on browser support.

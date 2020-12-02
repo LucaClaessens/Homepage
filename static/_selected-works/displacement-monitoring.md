@@ -10,7 +10,6 @@ images:
 featured_media_subtitle: Compilation of screens in the application
 overview_image: uploads/displacement/mockup@2x
 overview_style: cover
-short_description: hehe
 date: 2020-06-24T22:28:57.790Z
 ---
 
