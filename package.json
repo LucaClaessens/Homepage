@@ -12,9 +12,7 @@
     "start": "node __sapper__/build",
     "cy:run": "cypress run",
     "cy:open": "cypress open",
-    "test": "run-p --race dev cy:run",
-    "deploy": "firebase use lucaclaessens-32287 && npm run export && firebase deploy",
-    "deploy:test": "firebase use lucaclaessens-32287 && npm run export && firebase hosting:channel:deploy preview"
+    "test": "run-p --race dev cy:run"
   },
   "repository": {
     "type": "git",
@@ -29,7 +27,6 @@
     "markdown-it": "^10.0.0",
     "markdown-it-abbr": "^1.0.4",
     "markdown-it-footnote": "^3.0.2",
-    "markdown-it-implicit-figures": "^0.10.0",
     "mz": "^2.7.0",
     "polka": "next",
     "sirv": "^0.4.0",

@@ -1,5 +1,11 @@
 .post {
-    max-width: 1200px;
+    .post-gallery {
+        .vimeo-embed-container {
+            padding: 2rem;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+    }
     width: 100%;
     margin: 0 auto;
     .post-content {
@@ -7,16 +13,26 @@
         width: 100%;
         margin: 0 auto;
     }
-    .banner-image {
+    .banner-image,
+    .banner-video {
         width: calc(100% + 2rem);
         background: $primary;
         margin-left: -1rem;
         margin-top: -40px;
         border-radius: 2px;
         @include bp-medium {
-            height: 80vh;
+            height: calc(85vh + 25px);
+            margin-top: -50px;
+            padding-top: 25px;
         }
         .controls {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            max-width: 1100px;
+            margin: 0 auto;
             height: 100%;
             display: flex;
             padding: 1rem;

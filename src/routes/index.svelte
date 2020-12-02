@@ -2,6 +2,7 @@
   import { fade } from "svelte/transition";
   import CategorySelector from "../components/CategorySelector.svelte";
   import Footer from "../components/layout/Footer.svelte";
+  import { page_host } from "./../core/config";
   import { media } from "./../stores/media.store";
 
   export let segment;
@@ -16,6 +17,13 @@
 
 <svelte:head>
   <title>Luca his archive of ramblings</title>
+  <meta property="og:title" content="Luca his archive of ramblings" />
+  <meta
+    property="og:description"
+    content="Creative developer and digital designer, based in Eindhoven." />
+  <meta property="og:image" content="{page_host}/logo-512.png" />
+  <meta property="og:url" content={page_host} />
+  <meta name="twitter:card" content="summary_large_image" />
   <meta
     name="Description"
     content="Creative developer and digital designer, based in Eindhoven." />

@@ -30,7 +30,7 @@ understanding of the topic at hand.
 
 By allowing visitors to align themselves with a background and a set level of understanding of the topic, the system could be seeded to reccomend content.
 
-![The picker dialog that seeded the system](uploads/ubiquity/picker.png)
+![The picker dialog that seeded the system](../uploads/ubiquity/picker.png)(/uploads/ubiquity/picker.webp)(../uploads/ubiquity/picker.png)
 
 # Extensibility
 

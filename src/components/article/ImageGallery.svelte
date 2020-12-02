@@ -27,6 +27,12 @@
         position: relative;
         height: 70vh;
         min-height: 400px;
+        @include bp-medium {
+            height: 85vh;
+        }
+        @include bp-large {
+            height: 75vh;
+        }
         .image-wrapper {
             padding: 1rem;
         }
@@ -46,7 +52,7 @@
     .swiper-container {
         height: 100%;
         @include bp-small {
-            padding: 1rem;
+            // padding: 1rem;
         }
     }
     .image-wrapper {
