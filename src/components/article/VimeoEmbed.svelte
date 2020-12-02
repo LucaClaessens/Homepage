@@ -10,7 +10,8 @@
             height: 63vw;
         }
         @include bp-large {
-            height: 75vh;
+            height: 62vw;
+            max-height: 705px;
         }
     }
     iframe {

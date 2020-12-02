@@ -6,9 +6,9 @@
  *
  * output:
  *    <picture>
- *      <source srcset="source1" media="cond1" />
- *      <source srcset="source2" media="cond2" />
- *      <img srcset="defaultSource" alt="alt" title="title" />
+ *      <source src="source1" media="cond1" />
+ *      <source src="source2" media="cond2" />
+ *      <img src="defaultSource" alt="alt" title="title" />
  *    </picture>
  */
 
@@ -101,13 +101,13 @@ const rule = (state, silent) => {
 
         sources.forEach((s, i) => {
             token = state.push('picture_source', 'source', 0)
-            const attrs = [['srcset', s]]
+            const attrs = [['src', s]]
             if (media[i]) attrs.push(['media', media[i]])
             token.attrs = attrs
         })
 
         token = state.push('picture_img', 'img', 0)
-        const attrs = [['srcset', primary], ['alt', alt]]
+        const attrs = [['src', primary], ['alt', alt]]
         if (title) attrs.push(['title', title])
         token.attrs = attrs
 
