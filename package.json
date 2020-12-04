@@ -23,7 +23,7 @@
     "compression": "^1.7.1",
     "front-matter": "^3.0.2",
     "glob": "^7.1.6",
-    "highlight.js": "^10.4.0",
+    "highlight.js": "^10.4.1",
     "markdown-it": "^10.0.0",
     "markdown-it-abbr": "^1.0.4",
     "markdown-it-footnote": "^3.0.2",
