@@ -42,7 +42,7 @@
     "svelte": "^3.0.0",
     "svelte-loader": "^2.9.0",
     "svelte-preprocess": "^3.2.2",
-    "swiper": "^6.3.5",
+    "swiper": "^6.5.1",
     "webpack": "^4.28.4"
   },
   "browserslist": [
